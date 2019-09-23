@@ -41,7 +41,7 @@
                         label: 'Daily MSISDN Voice Call Attempts',
                         icon: 'monitor',
                         state: {
-                            to: '',
+                            to: 'user.dailyMsisdnVoiceAttempts',
                             params: {}
                         },
                         active: false
