@@ -31,10 +31,10 @@
                         label: 'Daily Dropped Voice Calls',
                         icon: 'monitor',
                         state: {
-                            to: '',
+                            to: 'user.dailyDroppedVoiceCalls',
                             params: {}
                         },
-                        active: false
+                        active: true
                     },
                     {
                         type: 'link',

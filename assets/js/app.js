@@ -26,6 +26,7 @@ window.app = angular.module('CEP', ['ui.router', 'ngCookies', 'datatables']);
 
 // ROUTES
 require('../routes/app.route');
+require('../routes/user.route');
 
 // SERVICES
 
@@ -37,3 +38,4 @@ require('../components/tr-wrapper/tr-wrapper');
 // VIEWS
 require('../views/login/login');
 require('../views/user-container/user-container');
+require('../views/daily-dropped-voice-calls/daily-dropped-voice-calls');

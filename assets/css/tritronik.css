@@ -62,8 +62,16 @@ body {
 }
 
 .table-responsive {
-    zoom: 85%;}
+    zoom: 85%;
+}
 
+/* aside 300px */
 .aside {
     width: 300px;
+}
+
+@media (min-width: 1200px) {
+    .aside-fixed+.content {
+        margin-left: 300px;
+    }
 }
