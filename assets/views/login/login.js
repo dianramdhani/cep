@@ -18,6 +18,7 @@ require('./login.css');
         $ctrl.$onInit = () => { };
 
         $scope.login = async () => {
+            $state.go('user');
         };
     }
 })();

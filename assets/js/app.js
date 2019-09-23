@@ -32,6 +32,8 @@ require('../routes/app.route');
 // DIRECTIVES
 
 // COMPONENTS
+require('../components/tr-wrapper/tr-wrapper');
 
 // VIEWS
 require('../views/login/login');
+require('../views/user-container/user-container');

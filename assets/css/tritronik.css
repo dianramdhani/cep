@@ -62,5 +62,8 @@ body {
 }
 
 .table-responsive {
-    zoom: 85%;
+    zoom: 85%;}
+
+.aside {
+    width: 300px;
 }
