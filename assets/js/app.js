@@ -40,3 +40,4 @@ require('../views/login/login');
 require('../views/user-container/user-container');
 require('../views/daily-dropped-voice-calls/daily-dropped-voice-calls');
 require('../views/daily-msisdn-voice-attempts/daily-msisdn-voice-attempts');
+require('../views/daily-voice-call-attempts/daily-voice-call-attempts');

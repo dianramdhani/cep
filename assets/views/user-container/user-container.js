@@ -51,7 +51,7 @@
                         label: 'Daily Voice Call Attempts',
                         icon: 'monitor',
                         state: {
-                            to: '',
+                            to: 'user.dailyVoiceCallAttempts',
                             params: {}
                         },
                         active: false
