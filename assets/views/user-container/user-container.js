@@ -28,13 +28,23 @@
                     // },
                     {
                         type: 'link',
+                        label: 'Dashboard',
+                        icon: 'trending-up',
+                        state: {
+                            to: 'user.dashboard',
+                            params: {}
+                        },
+                        active: true
+                    },
+                    {
+                        type: 'link',
                         label: 'Daily Dropped Voice Calls',
                         icon: 'trending-up',
                         state: {
                             to: 'user.dailyDroppedVoiceCalls',
                             params: {}
                         },
-                        active: true
+                        active: false
                     },
                     {
                         type: 'link',
