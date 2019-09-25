@@ -10,19 +10,22 @@
             controller: _
         });
 
-    _.$inject = ['DashboardService'];
-    function _(DashboardService) {
+    _.$inject = ['DashboardService', 'SummaryRestService'];
+    function _(DashboardService, SummaryRestService) {
         let $ctrl = this;
         $ctrl.$onInit = () => {
-            DashboardService.counters()
+            // DashboardService.counters()
+            //     .then(res => {
+            //         console.log('counters', res);
+            //     });
+            // DashboardService.sumProcessedCalls()
+            //     .then(res => {
+            //         console.log('sumProcessedCalls', res);
+            //     });
+            SummaryRestService.count({ date: null })
                 .then(res => {
-                    console.log('counters', res);
+                    console.log(res);
                 });
-            DashboardService.sumProcessedCalls()
-                .then(res => {
-                    console.log('sumProcessedCalls', res);
-                });
-
         };
     }
 })();

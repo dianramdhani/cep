@@ -30,6 +30,7 @@ require('../routes/user.route');
 
 // SERVICES
 require('../services/dashboard.service');
+require('../services/summary-rest.service');
 
 // DIRECTIVES
 

@@ -3,6 +3,6 @@
 
     window.app
         .constant('CONFIG', {
-            serviceAddress: '',
+            API: 'http://apps.tritronik.com/cep/',
         });
 })();
