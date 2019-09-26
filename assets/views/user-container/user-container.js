@@ -29,7 +29,7 @@
                     {
                         type: 'link',
                         label: 'Dashboard',
-                        icon: 'trending-up',
+                        icon: 'monitor',
                         state: {
                             to: 'user.dashboard',
                             params: {}
@@ -62,6 +62,16 @@
                         icon: 'trending-up',
                         state: {
                             to: 'user.dailyVoiceCallAttempts',
+                            params: {}
+                        },
+                        active: false
+                    },
+                    {
+                        type: 'link',
+                        label: 'Failed Calls Grouped by Cause',
+                        icon: 'pie-chart',
+                        state: {
+                            to: 'user.failedCallsGroupedByCause',
                             params: {}
                         },
                         active: false
