@@ -7,6 +7,19 @@
         </ol>
     </nav>
 </div>
-<iframe
-    src="http://elastic.tritronik.com:5601/app/kibana#/visualize/edit/ba0ea800-d929-11e9-ba24-c1301fb6b218?embed=true&_g=(refreshInterval:(pause:!t,value:0),time:(from:'2019-07-30T17:00:00.000Z',to:now))&_a=(filters:!(),linked:!f,query:(language:kuery,query:''),uiState:(),vis:(aggs:!((enabled:!t,id:'1',params:(field:calls),schema:metric,type:sum),(enabled:!t,id:'2',params:(drop_partials:!f,extended_bounds:(),field:date,interval:auto,min_doc_count:1,useNormalizedEsInterval:!t),schema:segment,type:date_histogram)),params:(addLegend:!t,addTimeMarker:!f,addTooltip:!t,categoryAxes:!((id:CategoryAxis-1,labels:(filter:!t,show:!t,truncate:100),position:bottom,scale:(type:linear),show:!t,style:(),title:(),type:category)),dimensions:(x:!n,y:!((accessor:0,aggType:count,format:(id:number),params:()))),grid:(categoryLines:!f),legendPosition:right,seriesParams:!((data:(id:'1',label:'Sum+of+calls'),drawLinesBetweenPoints:!t,mode:normal,show:true,showCircles:!t,type:line,valueAxis:ValueAxis-1)),times:!(),type:line,valueAxes:!((id:ValueAxis-1,labels:(filter:!f,rotate:0,show:!t,truncate:100),name:LeftAxis-1,position:left,scale:(mode:normal,type:linear),show:!t,style:(),title:(text:'Sum+of+calls'),type:value))),title:'Daily+Voice+Call+Attempts',type:line))"
-    width="100%" height="600" frameborder="0" style="border:0"></iframe>
+<form name="formTime" class="row row-xxs" ng-submit="setTime()">
+    <div class="form-group col-sm-3">
+        <label for="dateFrom">From</label>
+        <input type="text" class="form-control form-control-sm" id="dateFrom" name="dateFrom" placeholder="Date from"
+            tr-datepicker ng-model="dateFrom" required>
+    </div>
+    <div class="form-group col-sm-3">
+        <label for="dateTo">To</label>
+        <input type="text" class="form-control form-control-sm" id="dateTo" name="dateTo" placeholder="Date to"
+            tr-datepicker ng-model="dateTo" required>
+    </div>
+    <div class="form-group col-sm-3 d-flex align-items-end">
+        <button class="btn btn-sm btn-primary pd-x-30 mg-sm-l-10">Set Time</button>
+    </div>
+</form>
+<iframe src="{{link}}" width="100%" height="600" frameborder="0" style="border:0"></iframe>
