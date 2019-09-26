@@ -33,6 +33,7 @@ require('../services/dashboard.service');
 require('../services/summary-rest.service');
 
 // DIRECTIVES
+require('../directives/tr-datepicker.directive');
 
 // COMPONENTS
 require('../components/tr-wrapper/tr-wrapper');
