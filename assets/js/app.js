@@ -33,6 +33,7 @@ require('../services/dashboard.service');
 require('../services/summary-rest.service');
 
 // DIRECTIVES
+require('../directives/tr-datepicker.directive');
 
 // COMPONENTS
 require('../components/tr-wrapper/tr-wrapper');
@@ -44,3 +45,4 @@ require('../views/daily-dropped-voice-calls/daily-dropped-voice-calls');
 require('../views/daily-msisdn-voice-attempts/daily-msisdn-voice-attempts');
 require('../views/daily-voice-call-attempts/daily-voice-call-attempts');
 require('../views/dashboard/dashboard');
+require('../views/failed-calls-grouped-by-cause/failed-calls-grouped-by-cause');

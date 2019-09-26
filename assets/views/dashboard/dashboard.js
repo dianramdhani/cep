@@ -10,21 +10,13 @@
             controller: _
         });
 
-    _.$inject = ['DashboardService', 'SummaryRestService'];
-    function _(DashboardService, SummaryRestService) {
+    _.$inject = ['$scope', 'DashboardService', 'SummaryRestService'];
+    function _($scope, DashboardService, SummaryRestService) {
         let $ctrl = this;
         $ctrl.$onInit = () => {
-            // DashboardService.counters()
-            //     .then(res => {
-            //         console.log('counters', res);
-            //     });
-            // DashboardService.sumProcessedCalls()
-            //     .then(res => {
-            //         console.log('sumProcessedCalls', res);
-            //     });
             SummaryRestService.count({ date: null })
-                .then(res => {
-                    console.log(res);
+                .then(({ data }) => {
+                    $scope.data = data;
                 });
         };
     }

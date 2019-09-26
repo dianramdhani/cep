@@ -7,3 +7,48 @@
         </ol>
     </nav>
 </div>
+<div class="row row-xs">
+    <div class="col-sm-4 mg-sm-t-0">
+        <div class="card card-body text-center">
+            <h6 class="tx-uppercase tx-11 tx-spacing-1 tx-color-02 tx-semibold mg-b-8">Records</h6>
+            <p class="tx-11 tx-color-03 mg-b-0"><strong>Record Processed</strong></p>
+            <h3 class="tx-normal tx-rubik mg-b-0 mg-r-5 lh-1">
+                {{data['sumProcessedRecords'] | number : fractionSize}} /
+                {{data['collected-record'] | number : fractionSize}}
+            </h3>
+            <p class="tx-11 tx-color-03 mg-b-0">Sum Processed Records / Collected Records</p>
+            <small class="tx-color-03 mg-y-10">From</small>
+            <h3 class="tx-normal tx-rubik mg-b-0 mg-r-5 lh-1">{{data['collected-files'] | number : fractionSize}}</h3>
+            <p class="tx-11 tx-color-03 mg-b-0">Files</p>
+        </div>
+    </div>
+</div>
+<div class="row row-xs mg-t-10">
+    <div class="col-sm-4 mg-t-10 mg-sm-t-0">
+        <div class="card card-body text-center">
+            <h6 class="tx-uppercase tx-11 tx-spacing-1 tx-color-02 tx-semibold mg-b-8">Daily Dropped Voice Calls</h6>
+            <h3 class="tx-normal tx-rubik mg-b-0 mg-r-5 lh-1">
+                {{data['dailyDroppedVoiceCalls'] | number : fractionSize}}
+            </h3>
+            <p class="tx-11 tx-color-03 mg-b-0">Sum of Calls</p>
+        </div>
+    </div>
+    <div class="col-sm-4 mg-t-10 mg-sm-t-0">
+        <div class="card card-body text-center">
+            <h6 class="tx-uppercase tx-11 tx-spacing-1 tx-color-02 tx-semibold mg-b-8">Daily MSISDN Voice Attempts</h6>
+            <h3 class="tx-normal tx-rubik mg-b-0 mg-r-5 lh-1">
+                {{data['dailyMSISDNVoiceCallAttempts'] | number : fractionSize}}
+            </h3>
+            <p class="tx-11 tx-color-03 mg-b-0">Sum of MSISDN</p>
+        </div>
+    </div>
+    <div class="col-sm-4 mg-t-10 mg-sm-t-0">
+        <div class="card card-body text-center">
+            <h6 class="tx-uppercase tx-11 tx-spacing-1 tx-color-02 tx-semibold mg-b-8">Daily Voice Call Attempts</h6>
+            <h3 class="tx-normal tx-rubik mg-b-0 mg-r-5 lh-1">
+                {{data['dailyVoiceCallAttempts'] | number : fractionSize}}
+            </h3>
+            <p class="tx-11 tx-color-03 mg-b-0">Sum of Calls</p>
+        </div>
+    </div>
+</div>
