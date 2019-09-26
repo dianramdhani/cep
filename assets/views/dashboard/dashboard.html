@@ -7,8 +7,8 @@
         </ol>
     </nav>
 </div>
-<div class="row row-xs">
-    <div class="col-sm-4 mg-sm-t-0">
+<div class="row row-xs justify-content-center">
+    <div class="col-sm-6 mg-sm-t-0">
         <div class="card card-body text-center">
             <h6 class="tx-uppercase tx-11 tx-spacing-1 tx-color-02 tx-semibold mg-b-8">Records</h6>
             <p class="tx-11 tx-color-03 mg-b-0"><strong>Record Processed</strong></p>
@@ -16,7 +16,7 @@
                 {{data['sumProcessedRecords'] | number : fractionSize}} /
                 {{data['collected-record'] | number : fractionSize}}
             </h3>
-            <p class="tx-11 tx-color-03 mg-b-0">Sum Processed Records / Collected Records</p>
+            <p class="tx-11 tx-color-03 mg-b-0">Sum / Collected</p>
             <small class="tx-color-03 mg-y-10">From</small>
             <h3 class="tx-normal tx-rubik mg-b-0 mg-r-5 lh-1">{{data['collected-files'] | number : fractionSize}}</h3>
             <p class="tx-11 tx-color-03 mg-b-0">Files</p>
