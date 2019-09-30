@@ -7,20 +7,15 @@ window.app = angular.module('CEP', ['ui.router', 'ngCookies', 'datatables']);
     window.app
         .run(Run);
 
-    Run.$inject = ['$state', '$rootScope', '$cookies', '$http'];
-    function Run($state, $rootScope, $cookies, $http) {
-        $state.go('login');
-
-        // $rootScope['global'] = {
-        //     user: angular.fromJson($cookies.get('user')),
-        //     menu: angular.fromJson($cookies.get('menu'))
-        // } || {};
-        // if (typeof $rootScope.global.user === 'undefined') {
-        //     $state.go('login');
-        // } else {
-        //     // $http.defaults.headers.common = { token: $rootScope.global.user.token };
-        //     $state.go('etl');
-        // }
+    Run.$inject = ['$state', '$rootScope', '$http', 'UtilService'];
+    function Run($state, $rootScope, $http, UtilService) {
+        UtilService.updateGlobal();
+        if (typeof $rootScope.global.user === 'undefined') {
+            $state.go('login');
+        } else {
+            // $http.defaults.headers.common = { token: $rootScope.global.user.token };
+            $state.go('user.dashboard');
+        }
     }
 })();
 
@@ -29,8 +24,10 @@ require('../routes/app.route');
 require('../routes/user.route');
 
 // SERVICES
+require('../services/util.service');
 require('../services/dashboard.service');
 require('../services/summary-rest.service');
+require('../services/user.service');
 
 // DIRECTIVES
 require('../directives/tr-datepicker.directive');
