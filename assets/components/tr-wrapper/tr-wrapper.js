@@ -2,9 +2,9 @@
     'use strict';
 
     // Usage:
-    // 
+    // Wrapper header and sidebar.
     // Creates:
-    // 
+    // Call by container components.
 
     window.app
         .component('trWrapper', {
@@ -15,8 +15,8 @@
             }
         });
 
-    _.$inject = ['$timeout', '$scope', '$state', '$rootScope', '$cookies'];
-    function _($timeout, $scope, $state, $rootScope, $cookies) {
+    _.$inject = ['$timeout', '$scope', '$state', 'UserService', 'UtilService'];
+    function _($timeout, $scope, $state, UserService, UtilService) {
         let $ctrl = this;
         $ctrl.$onInit = () => {
             $timeout(() => {
@@ -39,16 +39,12 @@
                     menu.active = true;
                 }
             });
-
-            // $rootScope.global.menu = $ctrl.menu;
-            // let expires = new Date();
-            // expires.setDate(expires.getDate() + 7);
-            // $cookies.putObject('menu', $rootScope.global.menu, { expires });
-
+            UtilService.updateMenu({ menu: $ctrl.menu });
             $state.go($ctrl.menu.sidebar[index].state.to, $ctrl.menu.sidebar[index].state.params);
         };
 
         $scope.logout = () => {
+            UserService.logout();
             $state.go('login');
         };
     }

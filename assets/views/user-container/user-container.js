@@ -10,11 +10,11 @@
             controller: ControllerController
         });
 
-    ControllerController.$inject = ['$scope'];
-    function ControllerController($scope) {
+    ControllerController.$inject = ['$scope', '$rootScope'];
+    function ControllerController($scope, $rootScope) {
         let $ctrl = this;
         $ctrl.$onInit = () => {
-            $scope.menu = {
+            $scope.menu = $rootScope.global.menu || {
                 sidebar: [
                     // {
                     //     type: 'title | link | has-sub-link',
