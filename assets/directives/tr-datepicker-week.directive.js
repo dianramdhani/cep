@@ -7,9 +7,9 @@
     trDatepickerWeek.$inject = [];
     function trDatepickerWeek() {
         // Usage:
-        // Set ng-model with week datepicker jquery UI.
+        // Change week to fromDate and toDate.
         // Creates:
-        // Require jquery UI.
+        // Call by graph.
         var directive = {
             link: link,
             restrict: 'A',

@@ -23,7 +23,7 @@
         function link(scope, element, attrs) {
             element.on('change', () => {
                 scope.$apply(() => {
-                    scope.dateFromfrom = moment(element.val()).startOf('month').add(12, 'hours').toDate();
+                    scope.dateFrom = moment(element.val()).startOf('month').add(12, 'hours').toDate();
                     scope.dateTo = moment(element.val()).endOf('month').add(12, 'hours').toDate()
                 });
             });
