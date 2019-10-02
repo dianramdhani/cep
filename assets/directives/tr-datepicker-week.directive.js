@@ -23,8 +23,8 @@
         function link(scope, element, attrs) {
             element.on('change', () => {
                 scope.$apply(() => {
-                    scope.dateFrom = moment(element.val()).startOf('week').toDate();
-                    scope.dateTo = moment(element.val()).endOf('week').toDate()
+                    scope.dateFrom = moment(element.val()).startOf('week').add(12, 'hours').toDate();
+                    scope.dateTo = moment(element.val()).endOf('week').add(12, 'hours').toDate()
                 });
             });
         }
