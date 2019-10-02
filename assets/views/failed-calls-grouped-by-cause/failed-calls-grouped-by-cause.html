@@ -7,19 +7,17 @@
         </ol>
     </nav>
 </div>
-<form name="formTime" class="row row-xxs" ng-submit="setTime()">
+<form name="formDate" class="row row-xxs" ng-submit="setDate(dateFrom, dateTo)">
     <div class="form-group col-sm-3">
         <label for="dateFrom">From</label>
-        <input type="text" class="form-control form-control-sm" id="dateFrom" name="dateFrom" placeholder="Date from"
-            tr-datepicker ng-model="dateFrom" required>
+        <input type="date" class="form-control" id="dateFrom" name="dateFrom" ng-model="dateFrom" required>
     </div>
     <div class="form-group col-sm-3">
         <label for="dateTo">To</label>
-        <input type="text" class="form-control form-control-sm" id="dateTo" name="dateTo" placeholder="Date to"
-            tr-datepicker ng-model="dateTo" required>
+        <input type="date" class="form-control" id="dateTo" name="dateTo" ng-model="dateTo" required>
     </div>
     <div class="form-group col-sm-3 d-flex align-items-end">
-        <button class="btn btn-sm btn-primary pd-x-30 mg-sm-l-10">Set Time</button>
+        <button type="submit" class="btn btn-primary pd-x-30 mg-sm-l-10">Set Date</button>
     </div>
 </form>
 <iframe ng-src="{{link}}" width="100%" height="600" frameborder="0" style="border:0"></iframe>
