@@ -7,19 +7,49 @@
         </ol>
     </nav>
 </div>
-<form name="formTime" class="row row-xxs" ng-submit="setTime()">
+<div class="row row-xxs">
+    <div class="form-group col-sm-3">
+        <label for="timeStamp">Time Stamp</label>
+        <select id="timeStamp" class="custom-select" ng-model="timeStamp">
+            <option value="daily">Daily</option>
+            <option value="specificWeek">Specific week</option>
+            <option value="specificMonth">Sepcific month</option>
+        </select>
+    </div>
+</div>
+<form name="formDate" class="row row-xxs" ng-if="timeStamp === 'daily'" ng-submit="setDate(dateFrom, dateTo)">
     <div class="form-group col-sm-3">
         <label for="dateFrom">From</label>
-        <input type="text" class="form-control form-control-sm" id="dateFrom" name="dateFrom" placeholder="Date from"
-            tr-datepicker ng-model="dateFrom" required>
+        <input type="date" class="form-control" id="dateFrom" name="dateFrom" ng-model="dateFrom" required>
     </div>
     <div class="form-group col-sm-3">
         <label for="dateTo">To</label>
-        <input type="text" class="form-control form-control-sm" id="dateTo" name="dateTo" placeholder="Date to"
-            tr-datepicker ng-model="dateTo" required>
+        <input type="date" class="form-control" id="dateTo" name="dateTo" ng-model="dateTo" required>
     </div>
     <div class="form-group col-sm-3 d-flex align-items-end">
-        <button class="btn btn-sm btn-primary pd-x-30 mg-sm-l-10">Set Time</button>
+        <button type="submit" class="btn btn-primary pd-x-30 mg-sm-l-10">Set Date</button>
+    </div>
+</form>
+<form name="formSpecificWeek" class="row row-xxs" ng-if="timeStamp === 'specificWeek'"
+    ng-submit="setWeek(dateFrom, dateTo)">
+    <div class="form-group col-sm-3">
+        <label for="week">Week</label>
+        <input type="week" class="form-control" id="week" name="week" date-from="dateFrom" date-to="dateTo"
+            tr-datepicker-week required>
+    </div>
+    <div class="form-group col-sm-3 d-flex align-items-end">
+        <button type="submit" class="btn btn-primary pd-x-30 mg-sm-l-10">Set Week</button>
+    </div>
+</form>
+<form name="formSpecificMonth" class="row row-xxs" ng-if="timeStamp === 'specificMonth'"
+    ng-submit="setDate(dateFrom, dateTo)">
+    <div class="form-group col-sm-3">
+        <label for="month">Month</label>
+        <input type="month" class="form-control" id="month" name="month" date-from="dateFrom" date-to="dateTo"
+            tr-datepicker-month required>
+    </div>
+    <div class="form-group col-sm-3 d-flex align-items-end">
+        <button type="submit" class="btn btn-primary pd-x-30 mg-sm-l-10">Set Month</button>
     </div>
 </form>
 <iframe ng-src="{{link}}" width="100%" height="600" frameborder="0" style="border:0"></iframe>

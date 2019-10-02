@@ -30,7 +30,8 @@ require('../services/summary-rest.service');
 require('../services/user.service');
 
 // DIRECTIVES
-require('../directives/tr-datepicker.directive');
+require('../directives/tr-datepicker-week.directive');
+require('../directives/tr-datepicker-month.directive');
 
 // COMPONENTS
 require('../components/tr-wrapper/tr-wrapper');
