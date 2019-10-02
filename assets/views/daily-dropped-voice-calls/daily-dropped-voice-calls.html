@@ -31,7 +31,7 @@
     </div>
 </form>
 <form name="formSpecificWeek" class="row row-xxs" ng-if="timeStamp === 'specificWeek'"
-    ng-submit="setDate(dateFrom, dateTo)">
+    ng-submit="setWeek(dateFrom, dateTo)">
     <div class="form-group col-sm-3">
         <label for="week">Week</label>
         <input type="week" class="form-control" id="week" name="week" date-from="dateFrom" date-to="dateTo"
