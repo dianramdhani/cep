@@ -16,6 +16,7 @@
             { name: 'user.dailyDataConnectionsAttempts', url: '/daily-data-connections-attempts', component: 'dailyDataConnectionsAttempts' },
             { name: 'user.dailyDroppedDataConnection', url: '/daily-dropped-data-connection', component: 'dailyDroppedDataConnection' },
             { name: 'user.dailyMsisdnDataConnectionAttempts', url: '/daily-msisdn-data-connection-attempts', component: 'dailyMsisdnDataConnectionAttempts' },
+            { name: 'user.failedDataConnectionAttemptsGroupedByCause', url: '/failed-data-connection-attempts-grouped-by-cause', component: 'failedDataConnectionAttemptsGroupedByCause' },
         ]
             .forEach(state => $stateProvider.state(state));
     }

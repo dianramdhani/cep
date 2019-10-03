@@ -108,10 +108,10 @@
                     },
                     {
                         type: 'link',
-                        label: 'Failed Data Connection Attempts grouped by Cause',
+                        label: 'Failed Data Connection Attempts Grouped by Cause',
                         icon: 'pie-chart',
                         state: {
-                            to: '',
+                            to: 'user.failedDataConnectionAttemptsGroupedByCause',
                             params: {}
                         },
                         active: false
