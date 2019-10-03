@@ -51,7 +51,7 @@
                         label: 'Daily MSISDN Voice Call Attempts',
                         icon: 'trending-up',
                         state: {
-                            to: 'user.dailyMsisdnVoiceAttempts',
+                            to: 'user.dailyMsisdnVoiceCallAttempts',
                             params: {}
                         },
                         active: false

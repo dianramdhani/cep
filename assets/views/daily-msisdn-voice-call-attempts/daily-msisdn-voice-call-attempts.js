@@ -5,8 +5,8 @@
     // Daily MSISDN Voice Call Attempts view.
 
     window.app
-        .component('dailyMsisdnVoiceAttempts', {
-            template: require('./daily-msisdn-voice-attempts.html'),
+        .component('dailyMsisdnVoiceCallAttempts', {
+            template: require('./daily-msisdn-voice-call-attempts.html'),
             controller: _,
         });
 
