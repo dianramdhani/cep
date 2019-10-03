@@ -51,7 +51,7 @@
                         label: 'Daily MSISDN Voice Call Attempts',
                         icon: 'trending-up',
                         state: {
-                            to: 'user.dailyMsisdnVoiceAttempts',
+                            to: 'user.dailyMsisdnVoiceCallAttempts',
                             params: {}
                         },
                         active: false
@@ -72,6 +72,46 @@
                         icon: 'pie-chart',
                         state: {
                             to: 'user.failedCallsGroupedByCause',
+                            params: {}
+                        },
+                        active: false
+                    },
+                    {
+                        type: 'link',
+                        label: 'Daily Data Connections Attempts',
+                        icon: 'trending-up',
+                        state: {
+                            to: 'user.dailyDataConnectionsAttempts',
+                            params: {}
+                        },
+                        active: false
+                    },
+                    {
+                        type: 'link',
+                        label: 'Daily Dropped Data Connection',
+                        icon: 'trending-up',
+                        state: {
+                            to: 'user.dailyDroppedDataConnection',
+                            params: {}
+                        },
+                        active: false
+                    },
+                    {
+                        type: 'link',
+                        label: 'Daily MSISDN Data Connection Attempts',
+                        icon: 'trending-up',
+                        state: {
+                            to: 'user.dailyMsisdnDataConnectionAttempts',
+                            params: {}
+                        },
+                        active: false
+                    },
+                    {
+                        type: 'link',
+                        label: 'Failed Data Connection Attempts Grouped by Cause',
+                        icon: 'pie-chart',
+                        state: {
+                            to: 'user.failedDataConnectionAttemptsGroupedByCause',
                             params: {}
                         },
                         active: false
