@@ -46,3 +46,4 @@ require('../views/dashboard/dashboard');
 require('../views/failed-calls-grouped-by-cause/failed-calls-grouped-by-cause');
 require('../views/daily-data-connections-attempts/daily-data-connections-attempts');
 require('../views/daily-dropped-data-connection/daily-dropped-data-connection');
+require('../views/daily-msisdn-data-connection-attempts/daily-msisdn-data-connection-attempts');

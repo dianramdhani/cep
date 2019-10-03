@@ -101,7 +101,7 @@
                         label: 'Daily MSISDN Data Connection Attempts',
                         icon: 'trending-up',
                         state: {
-                            to: '',
+                            to: 'user.dailyMsisdnDataConnectionAttempts',
                             params: {}
                         },
                         active: false
