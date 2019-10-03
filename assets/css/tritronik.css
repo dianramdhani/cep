@@ -65,13 +65,23 @@ body {
     zoom: 85%;
 }
 
-/* aside 300px */
+/* aside 400px */
 .aside {
-    width: 300px;
+    width: 400px;
+}
+
+@media (max-width: 400px) {
+    .aside {
+        width: 100%;
+    }
+}
+
+.aside.maximize .aside-body {
+    width: 400px;
 }
 
 @media (min-width: 1200px) {
     .aside-fixed+.content {
-        margin-left: 300px;
+        margin-left: 400px;
     }
 }
