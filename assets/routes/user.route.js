@@ -14,6 +14,7 @@
             { name: 'user.dailyVoiceCallAttempts', url: '/daily-voice-call-attempts', component: 'dailyVoiceCallAttempts' },
             { name: 'user.failedCallsGroupedByCause', url: '/failed-calls-grouped-by-cause', component: 'failedCallsGroupedByCause' },
             { name: 'user.dailyDataConnectionsAttempts', url: '/daily-data-connections-attempts', component: 'dailyDataConnectionsAttempts' },
+            { name: 'user.dailyDroppedDataConnection', url: '/daily-dropped-data-connection', component: 'dailyDroppedDataConnection' },
         ]
             .forEach(state => $stateProvider.state(state));
     }

@@ -2,7 +2,7 @@
     'use strict';
 
     // Usage:
-    // Daily Data Connections Attemptss view.
+    // Daily Data Connections Attempts view.
 
     window.app
         .component('dailyDataConnectionsAttempts', {

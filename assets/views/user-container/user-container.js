@@ -91,7 +91,7 @@
                         label: 'Daily Dropped Data Connection',
                         icon: 'trending-up',
                         state: {
-                            to: '',
+                            to: 'user.dailyDroppedDataConnection',
                             params: {}
                         },
                         active: false

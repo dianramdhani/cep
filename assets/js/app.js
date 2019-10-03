@@ -45,3 +45,4 @@ require('../views/daily-voice-call-attempts/daily-voice-call-attempts');
 require('../views/dashboard/dashboard');
 require('../views/failed-calls-grouped-by-cause/failed-calls-grouped-by-cause');
 require('../views/daily-data-connections-attempts/daily-data-connections-attempts');
+require('../views/daily-dropped-data-connection/daily-dropped-data-connection');
