@@ -75,6 +75,46 @@
                             params: {}
                         },
                         active: false
+                    },
+                    {
+                        type: 'link',
+                        label: 'Daily Data Connections Attempts',
+                        icon: 'trending-up',
+                        state: {
+                            to: 'user.dailyDataConnectionsAttempts',
+                            params: {}
+                        },
+                        active: false
+                    },
+                    {
+                        type: 'link',
+                        label: 'Daily Dropped Data Connection',
+                        icon: 'trending-up',
+                        state: {
+                            to: '',
+                            params: {}
+                        },
+                        active: false
+                    },
+                    {
+                        type: 'link',
+                        label: 'Daily MSISDN Data Connection Attempts',
+                        icon: 'trending-up',
+                        state: {
+                            to: '',
+                            params: {}
+                        },
+                        active: false
+                    },
+                    {
+                        type: 'link',
+                        label: 'Failed Data Connection Attempts grouped by Cause',
+                        icon: 'pie-chart',
+                        state: {
+                            to: '',
+                            params: {}
+                        },
+                        active: false
                     }
                 ]
             }

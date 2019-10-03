@@ -13,6 +13,7 @@
             { name: 'user.dailyMsisdnVoiceAttempts', url: '/daily-msisdn-voice-attempts', component: 'dailyMsisdnVoiceAttempts' },
             { name: 'user.dailyVoiceCallAttempts', url: '/daily-voice-call-attempts', component: 'dailyVoiceCallAttempts' },
             { name: 'user.failedCallsGroupedByCause', url: '/failed-calls-grouped-by-cause', component: 'failedCallsGroupedByCause' },
+            { name: 'user.dailyDataConnectionsAttempts', url: '/daily-data-connections-attempts', component: 'dailyDataConnectionsAttempts' },
         ]
             .forEach(state => $stateProvider.state(state));
     }
