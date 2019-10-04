@@ -1,4 +1,4 @@
-<div class="d-sm-flex align-items-center justify-content-between mg-b-20 mg-lg-b-25 mg-xl-b-30">
+<div class="d-md-flex align-items-center justify-content-between mg-b-20 mg-lg-b-25 mg-xl-b-30">
     <h4 class="mg-b-0 tx-spacing--1">Dashboard</h4>
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb breadcrumb-style1 mg-b-10">
@@ -8,7 +8,7 @@
     </nav>
 </div>
 <div class="row row-xs justify-content-center">
-    <div class="col-sm-6 mg-sm-t-0">
+    <div class="col-md-6 mg-md-t-0">
         <div class="card card-body text-center">
             <h6 class="tx-uppercase tx-11 tx-spacing-1 tx-color-02 tx-semibold mg-b-8">Records</h6>
             <p class="tx-11 tx-color-03 mg-b-0"><strong>Record Processed</strong></p>
@@ -23,8 +23,8 @@
         </div>
     </div>
 </div>
-<div class="row row-xs mg-t-10">
-    <div class="col-sm-4 mg-t-10 mg-sm-t-0">
+<div class="row row-xs mg-t-0 mg-md-t-10">
+    <div class="col-md-4 mg-t-10 mg-md-t-0">
         <div class="card card-body text-center">
             <h6 class="tx-uppercase tx-11 tx-spacing-1 tx-color-02 tx-semibold mg-b-8">Daily Dropped Voice Calls</h6>
             <h3 class="tx-normal tx-rubik mg-b-0 mg-r-5 lh-1">
@@ -33,22 +33,82 @@
             <p class="tx-11 tx-color-03 mg-b-0">Sum of Calls</p>
         </div>
     </div>
-    <div class="col-sm-4 mg-t-10 mg-sm-t-0">
+    <div class="col-md-4 mg-t-10 mg-md-t-0">
         <div class="card card-body text-center">
-            <h6 class="tx-uppercase tx-11 tx-spacing-1 tx-color-02 tx-semibold mg-b-8">Daily MSISDN Voice Attempts</h6>
+            <h6 class="tx-uppercase tx-11 tx-spacing-1 tx-color-02 tx-semibold mg-b-8">Daily MSISDN Voice Call Attempts
+            </h6>
             <h3 class="tx-normal tx-rubik mg-b-0 mg-r-5 lh-1">
                 {{data['dailyMSISDNVoiceCallAttempts'] | number : fractionSize}}
             </h3>
             <p class="tx-11 tx-color-03 mg-b-0">Sum of MSISDN</p>
         </div>
     </div>
-    <div class="col-sm-4 mg-t-10 mg-sm-t-0">
+    <div class="col-md-4 mg-t-10 mg-md-t-0">
         <div class="card card-body text-center">
             <h6 class="tx-uppercase tx-11 tx-spacing-1 tx-color-02 tx-semibold mg-b-8">Daily Voice Call Attempts</h6>
             <h3 class="tx-normal tx-rubik mg-b-0 mg-r-5 lh-1">
                 {{data['dailyVoiceCallAttempts'] | number : fractionSize}}
             </h3>
             <p class="tx-11 tx-color-03 mg-b-0">Sum of Calls</p>
+        </div>
+    </div>
+</div>
+<div class="row row-xs mg-t-0 mg-md-t-10">
+    <div class="col-md-4 mg-t-10 mg-md-t-0">
+        <div class="card card-body text-center">
+            <h6 class="tx-uppercase tx-11 tx-spacing-1 tx-color-02 tx-semibold mg-b-8">
+                Failed Calls Grouped by Cause
+            </h6>
+            <h3 class="tx-normal tx-rubik mg-b-0 mg-r-5 lh-1">
+                0
+            </h3>
+            <p class="tx-11 tx-color-03 mg-b-0">Sum of Failed Calls</p>
+        </div>
+    </div>
+    <div class="col-md-4 mg-t-10 mg-md-t-0">
+        <div class="card card-body text-center">
+            <h6 class="tx-uppercase tx-11 tx-spacing-1 tx-color-02 tx-semibold mg-b-8">
+                Daily Data Connections Attempts
+            </h6>
+            <h3 class="tx-normal tx-rubik mg-b-0 mg-r-5 lh-1">
+                0
+            </h3>
+            <p class="tx-11 tx-color-03 mg-b-0">Sum of Data Connections</p>
+        </div>
+    </div>
+    <div class="col-md-4 mg-t-10 mg-md-t-0">
+        <div class="card card-body text-center">
+            <h6 class="tx-uppercase tx-11 tx-spacing-1 tx-color-02 tx-semibold mg-b-8">
+                Daily Dropped Data Connections
+            </h6>
+            <h3 class="tx-normal tx-rubik mg-b-0 mg-r-5 lh-1">
+                0
+            </h3>
+            <p class="tx-11 tx-color-03 mg-b-0">Sum of Dropped Data Connections</p>
+        </div>
+    </div>
+</div>
+<div class="row row-xs mg-t-0 mg-md-t-10 justify-content-center">
+    <div class="col-md-4 mg-t-10 mg-md-t-0">
+        <div class="card card-body text-center">
+            <h6 class="tx-uppercase tx-11 tx-spacing-1 tx-color-02 tx-semibold mg-b-8">
+                Daily MSISDN Data Connection Attempts
+            </h6>
+            <h3 class="tx-normal tx-rubik mg-b-0 mg-r-5 lh-1">
+                0
+            </h3>
+            <p class="tx-11 tx-color-03 mg-b-0">Sum of MSISDN Data Connection Attempts</p>
+        </div>
+    </div>
+    <div class="col-md-4 mg-t-10 mg-md-t-0">
+        <div class="card card-body text-center">
+            <h6 class="tx-uppercase tx-11 tx-spacing-1 tx-color-02 tx-semibold mg-b-8">
+                Failed Data Connection Attempts Grouped by Cause
+            </h6>
+            <h3 class="tx-normal tx-rubik mg-b-0 mg-r-5 lh-1">
+                0
+            </h3>
+            <p class="tx-11 tx-color-03 mg-b-0">Sum of Data Connection Attempt</p>
         </div>
     </div>
 </div>
