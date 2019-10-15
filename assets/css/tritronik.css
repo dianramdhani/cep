@@ -85,3 +85,20 @@ body {
         margin-left: 400px;
     }
 }
+
+.tr-datepicker-week tbody tr:hover {
+    transition: all 0.2s ease-in-out;
+    background-color: #0168fa;
+}
+
+.tr-datepicker-week tbody tr:hover td a {
+    color: #fff;
+}
+
+.tr-datepicker-week tbody tr:hover .ui-datepicker-week-col {
+    color: #fff;
+}
+
+.ui-datepicker .ui-datepicker-calendar td {
+    background-color: transparent;
+}

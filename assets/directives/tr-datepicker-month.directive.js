@@ -21,6 +21,9 @@
         return directive;
 
         function link(scope, element, attrs) {
+            if (!Modernizr.inputtypes.month) {
+                element.monthpicker({ dateFormat: 'yy-mm' });
+            }
             element.on('change', () => {
                 scope.$apply(() => {
                     scope.dateFrom = moment(element.val()).startOf('month').add(12, 'hours').toDate();

@@ -35,6 +35,10 @@
     "angular-ui-router": "^1.0.22",
     "d3": "^5.11.0",
     "datatables.net": "^1.10.19",
-    "normalize.css": "^8.0.1"
+    "jquery-ui-monthpicker": "^1.0.3",
+    "jquery-weekpicker": "^1.0.4",
+    "modernizr": "^3.7.1",
+    "normalize.css": "^8.0.1",
+    "npm-modernizr": "^2.8.3"
   }
 }

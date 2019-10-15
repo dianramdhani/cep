@@ -3,6 +3,6 @@
 
     window.app
         .constant('CONFIG', {
-            API: 'http://apps.tritronik.com/cep/',
+            API: 'http://cra.tritronik.com:8082',
         });
 })();
