@@ -49,7 +49,7 @@
                     {
                         type: 'link',
                         label: 'Daily MSISDN Voice Call Attempts',
-                        icon: 'trending-up',
+                        icon: 'bar-chart-2',
                         state: {
                             to: 'user.dailyMsisdnVoiceCallAttempts',
                             params: {}
@@ -59,7 +59,7 @@
                     {
                         type: 'link',
                         label: 'Daily Voice Call Attempts',
-                        icon: 'trending-up',
+                        icon: 'bar-chart-2',
                         state: {
                             to: 'user.dailyVoiceCallAttempts',
                             params: {}
@@ -69,7 +69,7 @@
                     {
                         type: 'link',
                         label: 'Failed Calls Grouped by Cause',
-                        icon: 'pie-chart',
+                        icon: 'bar-chart-2',
                         state: {
                             to: 'user.failedCallsGroupedByCause',
                             params: {}
@@ -89,7 +89,7 @@
                     {
                         type: 'link',
                         label: 'Daily Dropped Data Connection',
-                        icon: 'trending-up',
+                        icon: 'bar-chart-2',
                         state: {
                             to: 'user.dailyDroppedDataConnection',
                             params: {}
