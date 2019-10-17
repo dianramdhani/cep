@@ -109,7 +109,7 @@
                     {
                         type: 'link',
                         label: 'Failed Data Connection Attempts Grouped by Cause',
-                        icon: 'pie-chart',
+                        icon: 'bar-chart-2',
                         state: {
                             to: 'user.failedDataConnectionAttemptsGroupedByCause',
                             params: {}
