@@ -39,7 +39,7 @@
                     {
                         type: 'link',
                         label: 'Daily Dropped Voice Calls',
-                        icon: 'trending-up',
+                        icon: 'bar-chart-2',
                         state: {
                             to: 'user.dailyDroppedVoiceCalls',
                             params: {}
@@ -79,7 +79,7 @@
                     {
                         type: 'link',
                         label: 'Daily Data Connections Attempts',
-                        icon: 'trending-up',
+                        icon: 'bar-chart-2',
                         state: {
                             to: 'user.dailyDataConnectionsAttempts',
                             params: {}
@@ -99,7 +99,7 @@
                     {
                         type: 'link',
                         label: 'Daily MSISDN Data Connection Attempts',
-                        icon: 'trending-up',
+                        icon: 'bar-chart-2',
                         state: {
                             to: 'user.dailyMsisdnDataConnectionAttempts',
                             params: {}
