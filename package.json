@@ -33,7 +33,7 @@
     "angular-datatables": "^0.6.2",
     "angular-datetime-input": "^5.3.0",
     "angular-ui-router": "^1.0.22",
-    "d3": "^5.11.0",
+    "d3": "^7.6.1",
     "datatables.net": "^1.10.19",
     "jquery-ui-monthpicker": "^1.0.3",
     "jquery-weekpicker": "^1.0.4",
